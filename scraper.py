@@ -1,5 +1,6 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup as bs
+from notifypy import Notify
 import mechanicalsoup as ms
 import time
 import re
@@ -47,7 +48,6 @@ with open('clivia.txt', 'w') as filehandle:
     for listitem in clivia:
         filehandle.write('%s\n' % listitem)
 
-old = []
 with open('clivia.txt', 'r') as filehandle:
     old = [current_clivia.rstrip() for current_clivia in filehandle.readlines()]
 old
@@ -57,14 +57,24 @@ new_compare = [' '.join(x.split(' ')[:1]) for x in clivia]
 old_compare = [' '.join(y.split(' ')[:1]) for y in old]
 old_compare = ['MAT2133']
 
-comparison = lambda a, b: (list((set(a)- set(b))) + list((set(b)- set(a))))
+comparison = lambda a, b: list((set(a)- set(b))) + list((set(b)- set(a)))
 new_clivia = comparison(old_compare, new_compare)
-new_clivia
+# new_clivia
+
+# this is unnecessary... combine this into the one txt
+# with open('new_clivia.txt', 'w') as filehandle:
+#     for listitem in new_clivia:
+#         filehandle.write('%s\n' % listitem)
+
+# notifications system
+
+notification = Notify()
+notification.title = "New Clivias!"
+notification.message = "Even cooler message."
+notification.send()
 
 
 # BONUS #
 # tests
 
 # cron job
-
-# notifications system
