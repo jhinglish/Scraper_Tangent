@@ -49,9 +49,7 @@ def write_txt(filename):
             filehandle.write('%s\n' % listitem)
 write_txt(filename)
 
-
 comparison = lambda a, b: list((set(a)- set(b))) + list((set(b)- set(a)))
-old_clivia = ['MAT166 Mixed interspecifics : R250,00; https://utopiaclivias.co.za/product/mat166-mixed-interspecifics']
 new_clivia = comparison(old_clivia, clivia)
 
 if new_clivia:
@@ -63,4 +61,6 @@ if new_clivia:
 for items in new_clivia:
     print(items)
 
-# tests
+
+# crontab schedule syntax:
+# @hourly <path/to/file.py>
