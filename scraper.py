@@ -51,7 +51,7 @@ for m in range(tot_pages):
     url  = f'https://utopiaclivias.co.za/products/category/mature_plants?page={m}'
     html = urlopen(url).read().decode("utf-8")
 
-comparison = lambda a, b: list((set(a)- set(b)))
+comparison = lambda a, b: list((set(b)- set(a)))
 new_clivia = comparison(clivia, old_clivia)
 
 def write_txt(filename):

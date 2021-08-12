@@ -57,3 +57,6 @@ MAT2101 Orange bronze IS A : R350,00; https://utopiaclivias.co.za/product/mat210
 MAT2102 Perfect pastel x Romulus  : R450,00; https://utopiaclivias.co.za/product/mat2102-perfect-pastel-x-romulus
 MAT2103 Robusta x bronze : R500,00; https://utopiaclivias.co.za/product/mat2103-robusta-x-bronze
 MAT2105 Apricot orange : R300,00; https://utopiaclivias.co.za/product/mat2105-apricot-orange
+MAT2106 Robusta x yellow variegated : R300,00; https://utopiaclivias.co.za/product/mat2106-robusta-x-yellow-variegated
+MAT2107 Asterix x Aquarius : R750,00; https://utopiaclivias.co.za/product/mat2107-asterix-x-aquarius
+MAT2108 Robusta x Florid white lips : R500,00; https://utopiaclivias.co.za/product/mat2108-robusta-x-florid-white-lips
