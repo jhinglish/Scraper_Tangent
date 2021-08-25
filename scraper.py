@@ -72,5 +72,9 @@ for items in new_clivia:
     print(items)
 
 
-# crontab schedule syntax:
-# @hourly <path/to/file.py>
+# cronjob setup on linux system:
+# crontab -e
+# i
+# 0 * * * * /path/to/python <path/to/file/scraper.py>
+# esc
+# :wq
